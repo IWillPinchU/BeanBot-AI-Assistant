@@ -21,3 +21,5 @@ public class OpenAiImageController {
         return ResponseEntity.ok(imageResponse);
     }
 }
+
+//no money to run this

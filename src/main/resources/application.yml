@@ -3,11 +3,11 @@ spring:
     name: springAi
   ai:
     openai:
-      api-key: YOUR_API_KEY(EXPENSIVE)
+      api-key: API_KEY
     ollama:
       chat:
         options:
-          model: MODEL_YOU_WANT_TO_RUN
+          model: MODEL
     retry:
       max-attempts: 3
       backoff:

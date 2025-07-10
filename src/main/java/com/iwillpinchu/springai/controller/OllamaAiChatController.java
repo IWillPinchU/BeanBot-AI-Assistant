@@ -2,10 +2,6 @@ package com.iwillpinchu.springai.controller;
 
 
 import com.iwillpinchu.springai.service.OllamaAiService;
-import com.iwillpinchu.springai.service.OpenAiService;
-import org.springframework.ai.chat.prompt.Prompt;
-import org.springframework.ai.ollama.api.OllamaModel;
-import org.springframework.ai.ollama.api.OllamaOptions;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
