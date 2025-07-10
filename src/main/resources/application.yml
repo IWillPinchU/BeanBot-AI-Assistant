@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: springAi
+  ai:
+    openai:
+      api-key: YOUR_API_KEY(EXPENSIVE)
+    ollama:
+      chat:
+        options:
+          model: MODEL_YOU_WANT_TO_RUN
+    retry:
+      max-attempts: 3
+      backoff:
+        multiplier: 2
+        initial-interval: 10000ms
+        max-interval: 20000
+
+server:
+  port: 8000
