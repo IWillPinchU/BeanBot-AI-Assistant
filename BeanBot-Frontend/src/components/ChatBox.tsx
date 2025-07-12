@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/card'
 import { ChatContainer } from './ChatContainer'
 import { type Message } from './ChatMessage'
 
-type ModelType = 'openai-chat' | 'stable-image' | 'ollama-chat'
+type ModelType = 'openai-chat' | 'stable-image' | 'ollama-chat' | 'gemini-chat'
 
 interface ModelOption {
   id: ModelType
@@ -34,6 +34,12 @@ const modelOptions: ModelOption[] = [
     label: 'Ollama Chat',
     icon: <Bot className="h-4 w-4" />,
     description: 'Chat with local Ollama models'
+  },
+  {
+    id: 'gemini-chat',
+    label: 'Gemini Chat',
+    icon: <MessageSquare className="h-4 w-4" />,
+    description: 'Chat with Google Gemini models'
   }
 ]
 
@@ -92,7 +98,6 @@ export function ChatBox() {
           sender: 'bot',
           timestamp: new Date(),
           model: selectedModel.label,
-          // For image generation, if the response is a URL, treat it as an image
           ...(selectedModel.id === 'stable-image' && data.startsWith('http') && {
             imageUrl: data,
             text: 'Generated image'

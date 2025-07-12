@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 @Service
-@Component
 public class OllamaAiServiceImpl implements OllamaAiService {
 
     private final ChatClient chatClient;

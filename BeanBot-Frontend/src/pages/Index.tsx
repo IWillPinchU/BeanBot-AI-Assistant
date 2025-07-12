@@ -58,17 +58,21 @@ const Index = () => {
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 backdrop-blur-sm border border-primary/20">
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{animationDelay: '0.5s'}} />
-                <span className="text-sm font-medium text-foreground">Image Generation</span>
+                <span className="text-sm font-medium text-foreground">Stable Diffusion Images</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 backdrop-blur-sm border border-primary/20">
                 <div className="w-2 h-2 bg-primary-glow rounded-full animate-pulse" style={{animationDelay: '1s'}} />
                 <span className="text-sm font-medium text-foreground">Ollama Models</span>
               </div>
+              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 backdrop-blur-sm border border-primary/20">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" style={{animationDelay: '1.5s'}} />
+                <span className="text-sm font-medium text-foreground">Gemini Chat</span>
+              </div>
             </div>
           </div>
 
           {/* Features Grid */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-warm">
               <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto shadow-glow">
                 <Bot className="h-6 w-6 text-primary-foreground" />
@@ -82,7 +86,7 @@ const Index = () => {
                 <Sparkles className="h-6 w-6 text-accent-foreground" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Image Creation</h3>
-              <p className="text-sm text-muted-foreground">Generate Stunning images using Stable Diffusion technology</p>
+              <p className="text-sm text-muted-foreground">Generate stunning images using stable diffusion running locally</p>
             </div>
             
             <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-warm">
@@ -91,6 +95,14 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Local Models</h3>
               <p className="text-sm text-muted-foreground">Chat with powerful Ollama models running locally</p>
+            </div>
+
+            <div className="bg-card/30 backdrop-blur-sm rounded-2xl p-6 border border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-warm">
+              <div className="h-12 w-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 mx-auto shadow-glow">
+                <Bot className="h-6 w-6 text-primary-foreground" />
+              </div>
+              <h3 className="font-semibold text-foreground mb-2">Gemini Chat</h3>
+              <p className="text-sm text-muted-foreground">Advanced conversations with Google's Gemini AI models</p>
             </div>
           </div>
 

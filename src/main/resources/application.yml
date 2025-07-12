@@ -3,7 +3,7 @@ spring:
     name: springAi
   ai:
     openai:
-      api-key: API_KEY
+      api-key: YOUR_API_KEY
     ollama:
       chat:
         options:
@@ -14,6 +14,10 @@ spring:
         multiplier: 2
         initial-interval: 10000ms
         max-interval: 20000
+
+gemini:
+  api-url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent" || YOUR_API_URL
+  api-key: YOUR_API_KEY
 
 server:
   port: 8000
